@@ -1,10 +1,13 @@
 import React, {Component} from "react"
+import UsernameContext from "./UsernameContext"
 
 class Header extends Component {
+    static contextType = UsernameContext
     render() {
+        const username = this.context
         return (
             <header>
-                <p>Welcome, Username!</p>
+                <p>Welcome, {username}!</p>
             </header>
         )    
     }

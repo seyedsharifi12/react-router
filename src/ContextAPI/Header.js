@@ -1,10 +1,11 @@
 import React, {Component} from "react"
-import ThemeContext from "./themeContext"
+import ThemeContext from "./ThemenContext"
 
 class Header extends Component {
     static contextType = ThemeContext
     render() {
         const theme = this.context
+        console.log(theme)
         const firsLetterCapitalTheme = theme[0].toUpperCase()+ theme.slice(1);
         return (
          
