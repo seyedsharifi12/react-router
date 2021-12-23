@@ -1,12 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import UsernameContext from "./ContextPractice-1/UsernameContext.js"
-import App from "./ContextPractice-1/App"
+import ThemeContext from "./ContextAPI/themeContext.js"
+import App from "./ContextAPI/App"
 
 
 
 ReactDOM.render(
-    <UsernameContext.Provider value={"Michael"}>
+    <ThemeContext.Provider value={"light"}>
       <App />
-    </UsernameContext.Provider>
+    </ThemeContext.Provider>
     , document.getElementById("root"))

@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import ThemeContext from "./ThemenContext"
+import ThemeContext from "./themeContext"
 
 class Header extends Component {
     static contextType = ThemeContext
