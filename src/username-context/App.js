@@ -1,7 +1,7 @@
 import React from "react"
 import './styles.css'
 import Header from "./Header"
-import UsernameContext from "./UsernameContext"
+import UsernameContext from "./usernameContext"
 /**
  * Challenge: Set up context to save the user's username and pass it to anywhere that is currently hardcoding "Username".
  * 

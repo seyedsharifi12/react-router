@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import UsernameContext from "./UsernameContext"
+import UsernameContext from "./usernameContext"
 
 class Header extends Component {
     static contextType = UsernameContext
