@@ -9,8 +9,8 @@ function App() {
         <div>
             <Header />
             <ThemeContextConsumer>
-                {theme => (
-                    <Button theme={theme}/>
+                {value => (
+                    <Button theme={value.theme}/>
                 )}   
             </ThemeContextConsumer>
             
