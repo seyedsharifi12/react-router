@@ -1,18 +1,18 @@
 import React from "react"
-import ThemeContext from "./themeContext"
+import { ThemeContextConsumer } from "./themeContext"
 import PropTypes from "prop-types"
 
 function Header (props) {    
     const capitalize = (string)=> string[0].toUpperCase()+ string.slice(1);
     return (
-        <ThemeContext.Consumer>
+        <ThemeContextConsumer>
             {theme => (
                     <header className={`${props.theme}-theme`}>
                     <h2>{`${capitalize(props.theme)} Theme`}</h2>
                     </header>
                 )
             }
-        </ ThemeContext.Consumer>
+        </ ThemeContextConsumer>
     )    
 }
 

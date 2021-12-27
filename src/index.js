@@ -3,13 +3,13 @@ import ReactDOM from "react-dom"
 
 /* === THEME-CONTEXT === */
 
-import ThemeContext from "./theme-context/themeContext"
+import { ThemeContextProvider } from "./theme-context/themeContext"
 import App from "./theme-context/App"
 
 ReactDOM.render(
-    <ThemeContext.Provider value={"light"}>
+    <ThemeContextProvider value={"light"}>
       <App />
-    </ThemeContext.Provider>
+    </ThemeContextProvider>
     , document.getElementById("root")
 )
 
