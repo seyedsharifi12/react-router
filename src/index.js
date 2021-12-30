@@ -1,17 +1,26 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import App from "./react-router/App"
+import { BrowserRouter as Router } from 'react-router-dom'
+
+ReactDOM.render(
+  <Router>
+    <App />
+  </Router>
+, document.getElementById("root"))
+
 
 /* === USER-CONTEXT === */
 
-import { UserContextProvider } from './user-context/userContext'
-import App from './user-context/App'
+// import { UserContextProvider } from './user-context/userContext'
+// import App from './user-context/App'
 
-ReactDOM.render(
-  <UserContextProvider>
-    <App />
-  </UserContextProvider>
-  , document.getElementById("root")
-)
+// ReactDOM.render(
+//   <UserContextProvider>
+//     <App />
+//   </UserContextProvider>
+//   , document.getElementById("root")
+// )
 
 /* === THEME-CONTEXT === */
 
