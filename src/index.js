@@ -1,17 +1,29 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-/* === THEME-CONTEXT === */
+/* === USER-CONTEXT === */
 
-import { ThemeContextProvider } from "./theme-context/themeContext"
-import App from "./theme-context/App"
+import { UserContextProvider } from './user-context/userContext'
+import App from './user-context/App'
 
 ReactDOM.render(
-    <ThemeContextProvider value={"light"}>
-      <App />
-    </ThemeContextProvider>
-    , document.getElementById("root")
+  <UserContextProvider>
+    <App />
+  </UserContextProvider>
+  , document.getElementById("root")
 )
+
+/* === THEME-CONTEXT === */
+
+// import { ThemeContextProvider } from "./theme-context/themeContext"
+// import App from "./theme-context/App"
+
+// ReactDOM.render(
+//     <ThemeContextProvider value={"light"}>
+//       <App />
+//     </ThemeContextProvider>
+//     , document.getElementById("root")
+// )
 
 
 /* === USERNAME-CONTEXT === */
@@ -25,3 +37,4 @@ ReactDOM.render(
 //   </UsernameContext.Provider>
 //   , document.getElementById("root")
 // )
+
